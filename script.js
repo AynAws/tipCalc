@@ -1,7 +1,7 @@
 let bill = 120;
 let numOfPpl = 5;
 
-let service = prompt('Was the service good, great, or poor?');
+//let service = prompt('Was the service good, great, or poor?');
 service = service.toLowerCase();
 console.log(service); //returns service in lowercase
 

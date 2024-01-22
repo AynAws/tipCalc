@@ -24,9 +24,48 @@
         <header>
             <!-- place navbar here -->
         </header>
-        <main>
 
+        <main>
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <!--User Input totalBill#-->
+                        <label for="totalBill" class="form-label">Total Bill:</label>
+                        <input type="text" class="form-control" id="totalBill" placeholder="Enter total bill amount...">
+                    </div>
+                    <div class="col-md-6 mt-sm-1">
+                        <!--User Input total#OfPpl-->
+                        <label for="numOfPpl" class="form-label">Part Size:</label>
+                        <input type="text" class="form-control" id="totalBill" placeholder="Enter total party size...">
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <!--Servce quali drop-->
+                        <label for="serviceQual" class="form-label">Service Quality:</label>
+                        <select name="Service quality" id="quality" class="form-select">
+                            <option value="Great">Great</option>
+                            <option value="Good">Good</option>
+                            <option value="Poor">Poor</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <button class="btn btn-danger" onclick="calcAndDisplay()">
+                            Calculate Tip
+                        </button>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                        <!--Results-->
+                        <p id="tipRe"></p>
+                        <p id="totalBillRe"></p>
+                        <p id="amtPerPrsnRe"></p>
+                    </div>
+                </div>
+            </div>
         </main>
+
         <footer>
             <!-- place footer here -->
         </footer>
