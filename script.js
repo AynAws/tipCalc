@@ -1,4 +1,18 @@
-let bill = 120;
+function calcAndDisplay() {
+    let bill = parseFloat(document.getElementById('totalBill').value);
+    let numOfPpl = parseInt(document.getElementById('numOfPpl'));
+    let service = document.getElementById('service').value;
+    let tip = calcTip(bill, service)
+    let totalBill = calcTotalBill(bill, tip)
+    let amntPerPrsn = calcAmntPerPrsn(totalBill, numOfPpl)
+
+    //Display Re
+    document.getElementById('tipRe').innerText = 'Tip: $' + tip.toFixed(2);
+    document.getElementById('totalBillRe').innterText = 'Total Bill: $' + amntPerPrsn.toFixed(2);
+    //continued...
+}
+
+/* let bill = 120;
 let numOfPpl = 5;
 
 let service = prompt('Was the service good, great, or poor?');
@@ -33,4 +47,5 @@ let amntPerPrsn = calcAmntPerPrsn(totalBill, numOfPpl);
 
 console.log('Tip: $' + tip); //returns Tip: $tip
 console.log('Total Bill: $' + totalBill); //returns Total Bill: $totalBill
-console.log('Amount per person $' + amntPerPrsn); //returns Amount per person: $amntPerPrsn
+console.log('Amount per person $' + amntPerPrsn); //returns Amount per person: $amntPerPrsn */
+//hi
